@@ -1,0 +1,915 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  min-width: 1900px;
+}
+
+button {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1920px;
+  margin: 0px auto;
+}
+
+header {
+  max-width: 1900px;
+}
+
+header a {
+  text-decoration: none;
+  color: #f1ac11;
+}
+
+.header-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1900px;
+}
+
+.header-bg .header-bg-meat {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  min-width: 770px;
+  width: 770px;
+  height: 1103px;
+  background-image: url(../img/meat.png);
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.header-bg .line-1 {
+  position: relative;
+  top: 0px;
+  left: -364px;
+  min-width: 363px;
+  height: 1103px;
+  background-image: url(../img/line.png);
+  z-index: 5;
+}
+
+.header-bg .header-bg-vegetarian {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  position: relative;
+  top: 0px;
+  left: -730px;
+  min-width: 1164px;
+  height: 1103px;
+  background-image: url(../img/vegetarian.png);
+  background-repeat: no-repeat;
+  z-index: 0;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.header-bg .line-2 {
+  position: relative;
+  top: 0px;
+  left: -1095px;
+  min-width: 363px;
+  height: 1103px;
+  background-image: url(../img/line.png);
+  z-index: 5;
+}
+
+.header-bg .header-bg-secrets {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  position: relative;
+  z-index: -10;
+  top: 0px;
+  left: -1455px;
+  min-width: 698px;
+  height: 1103px;
+  background-image: url(../img/secrets.png);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.header-logo {
+  position: relative;
+  top: 45px;
+  left: -3290px;
+  height: 61px;
+}
+
+.header-logo:hover {
+  cursor: pointer;
+}
+
+.header-menu {
+  height: 30px;
+  font-family: 'Myriad Pro';
+  font-size: 22px;
+  text-transform: uppercase;
+  position: relative;
+  top: 80px;
+  left: -2890px;
+  z-index: 10;
+  color: #fff;
+}
+
+.header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-menu ul li {
+  white-space: nowrap;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  margin: 0 35px;
+}
+
+.header-menu ul li .underline {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin-top: 13px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.meat-logo {
+  width: 375px;
+  height: 209px;
+  position: relative;
+  top: 450px;
+  left: -4325px;
+  z-index: 10;
+  background-image: url(../img/frame-unactive.png);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.meat-logo .meat-frame {
+  width: 375px;
+  height: 209px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.meat-logo .meat-text {
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+}
+
+.meat-logo .meat-text .lovers {
+  text-align: center;
+}
+
+.meat-logo .meat-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.meat-logo .meat-button button {
+  width: 140px;
+  height: 30px;
+  background-color: #f1ac11;
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  border: none;
+  border-radius: 5px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.vegetarian-logo {
+  width: 375px;
+  height: 209px;
+  position: relative;
+  top: 375px;
+  left: -4000px;
+  z-index: 10;
+  background-image: url(../img/frame-unactive.png);
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.vegetarian-logo .vegetarian-frame {
+  width: 375px;
+  height: 209px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vegetarian-logo .vegetarian-text {
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+}
+
+.vegetarian-logo .vegetarian-text .vegan {
+  text-align: center;
+}
+
+.vegetarian-logo .vegetarian-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vegetarian-logo .vegetarian-button button {
+  width: 140px;
+  height: 30px;
+  background-color: #f1ac11;
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  border: none;
+  border-radius: 5px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.secrets-logo {
+  width: 375px;
+  height: 209px;
+  position: relative;
+  top: 320px;
+  left: -3680px;
+  z-index: 10;
+  background-image: url(../img/frame-unactive.png);
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.secrets-logo .secrets-frame {
+  width: 375px;
+  height: 209px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secrets-logo .secrets-text {
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 38px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+}
+
+.secrets-logo .secrets-text .secrets {
+  text-align: center;
+}
+
+.secrets-logo .secrets-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secrets-logo .secrets-button button {
+  width: 140px;
+  height: 30px;
+  background-color: #f1ac11;
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+  border: none;
+  border-radius: 5px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.daily-menu {
+  background-color: #fff;
+  padding: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daily-menu .daily-menu-container {
+  min-width: 900px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  white-space: nowrap;
+}
+
+.daily-menu .daily-menu-title {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 42px;
+  color: #f1ac11;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.daily-menu .daily-menu-subtitle {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 14px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0;
+}
+
+.daily-menu .daily-menu-subtitle p {
+  margin-left: 15px;
+}
+
+.daily-menu .daily-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.daily-menu .daily-menu-column-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 42.5px;
+}
+
+.daily-menu .daily-menu-column-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 42.5px;
+}
+
+.daily-menu .daily-menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+
+.daily-menu .daily-menu-item-contet {
+  margin-top: 8px;
+}
+
+.daily-menu #first {
+  margin-top: 0px;
+}
+
+.daily-menu #last {
+  margin-bottom: 0px;
+}
+
+.daily-menu .daily-menu-item-img {
+  margin-right: 30px;
+}
+
+.daily-menu .price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.daily-menu .daily-menu-item-title {
+  font-family: 'Myriad Pro';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+}
+
+.daily-menu .price-frame {
+  min-width: 46px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/price.png);
+}
+
+.daily-menu .price-frame .daily-menu-item-price {
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 14px;
+  color: #2b2b2b;
+}
+
+.daily-menu .daily-menu-item-subtitle {
+  min-width: 300px;
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 12px;
+  color: #bcbcbc;
+}
+
+.online-menu {
+  background-color: #fff;
+  padding: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.online-menu .online-menu-container {
+  min-width: 1070px;
+}
+
+.online-menu .online-menu-item {
+  background-image: url(../img/online-menu.png);
+  background-repeat: no-repeat;
+  min-height: 300px;
+  max-height: 300px;
+  position: relative;
+  left: 80px;
+}
+
+.online-menu .online-menu-item-content {
+  max-width: 370px;
+  min-width: 370px;
+  max-height: 300px;
+  margin-left: 470px;
+}
+
+.online-menu .online-menu-item-title {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 12px;
+  color: #f1ac11;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+
+.online-menu .online-menu-item-food-name {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 24px;
+  color: #2b2b2b;
+  margin-bottom: 28px;
+}
+
+.online-menu .online-menu-item-text {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 14px;
+  color: #2b2b2b;
+}
+
+.online-menu .online-menu-item-price {
+  margin-top: 55px;
+}
+
+.online-menu .online-menu-item-price #price-button {
+  position: relative;
+  top: 0px;
+  height: 32px;
+  width: 100px;
+  background-color: #f1ac11;
+  border: 0px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 0px #b47d00;
+          box-shadow: 0px 4px 0px #b47d00;
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 14px;
+  color: #2b2b2b;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.online-menu .online-menu-item-price #price-button:active {
+  top: 2px;
+  -webkit-box-shadow: 0px 2px 0px #b47d00;
+          box-shadow: 0px 2px 0px #b47d00;
+}
+
+.online-menu .online-menu-next {
+  white-space: nowrap;
+  position: relative;
+  bottom: 170px;
+  left: 995px;
+  max-width: 85px;
+  width: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+}
+
+.online-menu .online-menu-next:hover {
+  cursor: pointer;
+}
+
+.online-menu .online-menu-next-text {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 12px;
+  color: #f1ac11;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.online-menu .online-menu-next-arrow {
+  margin: 10px;
+  position: relative;
+  top: 3px;
+}
+
+.addres .addres-container {
+  width: 100%;
+  background-image: url(../img/addres-bg.png);
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 0;
+}
+
+.addres .addres-frame {
+  background-image: url(../img/addres-frame.png);
+  width: 568px;
+  height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addres .addres-frame-filling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 400px;
+}
+
+.addres .addres-frame-filling .addres-frame-title {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 28px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.addres .addres-frame-filling .addres-frame-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.addres .addres-frame-filling .addres-frame-left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 35px;
+}
+
+.addres .addres-frame-filling .addres-frame-left-side .addres-frame-text-1 {
+  font-family: 'Myriad Pro';
+  font-size: 22px;
+  color: #f1ac11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+
+.addres .addres-frame-filling .addres-frame-rght-side {
+  margin-left: 35px;
+}
+
+.addres .addres-frame-filling .addres-frame-text-2 p {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 18px;
+  color: #000;
+}
+
+.addres .addres-frame-filling .addres-frame-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 40px;
+}
+
+.addres .addres-frame-filling .addres-frame-button #addres-button {
+  position: relative;
+  top: 0;
+  width: 128px;
+  height: 34px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #f1ac11;
+  -webkit-box-shadow: 0px 4px 0px #b47d00;
+          box-shadow: 0px 4px 0px #b47d00;
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 14px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+}
+
+.addres .addres-frame-filling .addres-frame-button #addres-button:active {
+  top: 2px;
+  -webkit-box-shadow: 0px 2px 0px #b47d00;
+          box-shadow: 0px 2px 0px #b47d00;
+}
+
+footer {
+  width: 100%;
+  background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #bbb;
+}
+
+footer .footer-container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 0;
+  max-width: 1025px;
+}
+
+footer .footer-column {
+  position: relative;
+  top: 0px;
+  left: -150px;
+  margin-right: 37.5px;
+}
+
+footer .footer-column .footer-column-title {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+footer .footer-column .footer-column-text {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+footer .footer-mail .footer-mail-title {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #eee9e9;
+  position: relative;
+  top: -34px;
+}
+
+footer .footer-mail #email {
+  background-color: #9d9591;
+  outline: 0px;
+  border: 0;
+  opacity: 0.7;
+  width: 223px;
+  height: 30px;
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 7px;
+}
+
+footer .footer-mail #email::-webkit-input-placeholder {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer .footer-mail #email:-ms-input-placeholder {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer .footer-mail #email::-ms-input-placeholder {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer .footer-mail #email::placeholder {
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer .footer-mail .footer-forms {
+  position: relative;
+  top: -5px;
+}
+
+footer .footer-mail #footer-button {
+  position: relative;
+  top: -2px;
+  width: 97px;
+  height: 42px;
+  font-family: 'Myriad Pro';
+  font-style: italic;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #f1ac11;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 23px;
+  -webkit-box-shadow: 0px 4px 0px #b47d00;
+          box-shadow: 0px 4px 0px #b47d00;
+}
+
+footer .footer-mail #footer-button:active {
+  top: 0px;
+  -webkit-box-shadow: 0px 2px 0px #b47d00;
+          box-shadow: 0px 2px 0px #b47d00;
+}
